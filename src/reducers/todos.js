@@ -6,6 +6,7 @@ const todo = (state, action) => {
       return {
         id: action.id,
         text: action.text,
+        desc:action.desc,
         completed: false
       }
     case 'TOGGLE_TODO':
@@ -33,6 +34,8 @@ const todos = (state = [], action) => {
       return state.map(t =>
         todo(t, action)
       )
+      case 'UPDATE_TODO' :
+        return fbjbjfdjhj
     default:
       return state
   }
